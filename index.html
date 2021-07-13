@@ -3,10 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link type="text/css" rel="stylesheet" href="css/ajedrez.css">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <link rel="icon" href="imagenes/navegador2.png">
     <title>Ajedrez</title>
+    <style type="text/css">
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face{
+    font-family: title;
+    src: url(../Ajedrez/CSS/Fonts/GODOFWAR.TTF);
+}
+#contenedor{
+    width: 100%;
+    background-color: #75002f;
+    height: 130px;
+    position: fixed;
+}
+#title{
+    text-align: center;
+    font-family: title;
+    font-size: 50px;
+    padding-top: 40px;
+    color: white;
+}
+#cora{
+    width: 150px;
+    height: 120px;
+    position: absolute;
+    padding: 10px;
+    margin-top: -95px;
+    margin-left: 10px;
+}
+h4{
+    margin-top: 7px;
+}
+.nav{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 1300px;
+    margin-top: -20px;
+    float: left;
+}
+ul,ol{
+    list-style: none;
+}
+.nav > li{
+    float: left;
+}
+.nav li a{
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    height: 30px;
+    border-radius: 6px;
+    border: 3px solid black;
+}
+.nav li a:hover{
+    background-color: skyblue;
+}
+.nav li ul{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.nav li:hover > ul{
+    display: block;
+}
+.nav li ul li{
+    position: relative;
+}
+#contenedor2{
+    border-radius: 20px;
+    margin: auto;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+#fondo{
+    border-radius: 15px;
+    margin-left: 1%;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #75002f;
+}
+#fondo2{
+    border-radius: 15px;
+    margin-left: 22px;
+    width: 300px;
+    height: 200px;
+    border: 5px solid #75002f;
+}
+#fondo3{
+    border-radius: 15px;
+    margin-left: 68%;
+    margin-top: -215px;
+    width: 300px;
+    height: 200px;
+    float: left;
+    border: 5px solid #75002f;
+}
+#subt{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: rgb(63, 63, 212);
+}
+#contenedor3{
+    border-radius: 20px;
+    margin: auto;
+    width: 1200px;
+    background-color: rgba(255, 255, 255, 0.719);
+}
+hr{
+    margin: auto;
+    width: 1100px;
+    border: 2px solid black;
+}
+h1{
+    text-align: center;
+}
+h3{
+    font: oblique bold 120% cursive;
+    padding: 13px;
+    text-align: left;
+}
+img:hover{
+    transform: scale(1.1);
+}
+img{
+    border-radius: 20px;
+    border: 5px solid #75002f;
+    width: 600px;
+    height: 320px;
+    margin-left: 300px;
+}
+.footer {
+    margin-top: 40px;
+    background-color: #75002f;
+}
+.fot{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    line-height: 2.0em;
+    color: white;
+    background-color: #75002f;;
+}
+.copy{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    border-top: 1px solid white;
+    line-height: 1.5em;
+    color: white;
+    background-color: #75002f;
+}
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+a:hover{
+    color: #dc8b04;
+}
+a{
+    color: #fbaf32;
+}
+</style>
 </head>
 <body style="background-image: url(imagenes/fondos.jpg); background-size: 100% 100%; background-attachment: fixed;">
     <div id="contenedor">
